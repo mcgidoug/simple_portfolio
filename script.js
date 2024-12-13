@@ -1,33 +1,15 @@
 function navigateTo(page) {
-  const contentDiv = document.getElementById("content");
-
   if (page === "home") {
-    contentDiv.innerHTML = `
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the home page. Click the links above to navigate.</p>
-        `;
+    window.location.href = "../index.html";
   } else if (page === "about") {
-    contentDiv.innerHTML = `
-            <h1>About Me</h1>
-            <p>I'm a web developer with a passion for creating beautiful and functional websites.</p>
-        `;
+    window.location.href = "/pages/about.html";
   } else if (page === "projects") {
-    contentDiv.innerHTML = `
-            <h1>My Projects</h1>
-            <p>Here are some of my recent projects:</p>
-            <ul>
-                <li>Project One</li>
-                <li>Project Two</li>
-                <li>Project Three</li>
-            </ul>
-        `;
+    window.location.href = "/pages/projects.html";
+  } else if (page === "services") {
+    window.location.href = "/pages/services.html";
   } else if (page === "contact") {
-    contentDiv.innerHTML = `
-            <h1>Contact Me</h1>
-            <p>You can reach me at: myemail@example.com</p>
-        `;
+    window.location.href = "/pages/contact.html";
+  } else {
+    console.error("Invalid page:", page);
   }
 }
-
-// Load home content by default
-navigateTo("home");
