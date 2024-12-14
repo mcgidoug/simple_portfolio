@@ -86,3 +86,68 @@ main h1 {
   color: #444; /* Slightly lighter color for the heading */
   margin-bottom: 20px; /* Adds spacing between heading and content */
 }
+
+/* ------- MEDIA QUERIES ------- */
+
+/* For devices with a max-width of 768px (tablets and smaller) */
+@media screen and (max-width: 768px) {
+  /* Adjust the navbar layout */
+  header nav ul {
+    flex-direction: column; /* Stack the navbar items vertically */
+    align-items: center; /* Center the items horizontally */
+  }
+
+  header nav ul li {
+    margin-bottom: 10px; /* Adds space between navbar items */
+  }
+
+  /* Adjust the main content */
+  main {
+    padding: 0 20px; /* Reduce the horizontal padding */
+    margin-top: 260px; /* Add more space between the navbar and content */
+  }
+
+  /* Adjust the image size */
+  main img {
+    width: 120px; /* Slightly smaller image */
+  }
+
+  /* Adjust the heading font size */
+  main h1 {
+    font-size: 2.5em; /* Smaller font size for better readability on smaller screens */
+  }
+
+  /* Adjust the paragraph font size */
+  main p {
+    font-size: 1em; /* Slightly smaller paragraph text */
+  }
+}
+
+/* For devices with a max-width of 480px (small phones) */
+@media screen and (max-width: 480px) {
+  /* Further reduce the navbar item spacing */
+  header nav ul li {
+    margin-bottom: 5px;
+  }
+
+  /* Adjust the main content */
+  main {
+    padding: 0 10px; /* Reduce padding for smaller screens */
+    margin-top: 260px; /* Add more space for smaller devices */
+  }
+
+  /* Adjust the image size */
+  main img {
+    width: 100px; /* Make the image even smaller for very small screens */
+  }
+
+  /* Further reduce heading font size */
+  main h1 {
+    font-size: 2em; /* Adjust the heading size for small screens */
+  }
+
+  /* Further reduce paragraph font size */
+  main p {
+    font-size: 0.9em; /* Smaller paragraph text */
+  }
+}
