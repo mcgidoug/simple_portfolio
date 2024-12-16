@@ -61,6 +61,15 @@ main {
   margin-top: 80px; /* Adds space between the navbar and the content */
 }
 
+/* Headings styling */
+main h1 {
+  font-size: 3.5em; /* Larger heading size */
+  font-weight: 300;
+  margin-top: 0; /* Removes extra space above the heading */
+  color: #444; /* Slightly lighter color for the heading */
+  margin-bottom: 20px; /* Adds spacing between heading and content */
+}
+
 /* Image styling */
 main img {
   display: block; /* Ensures the image is treated as a block element */
@@ -78,13 +87,20 @@ main p {
   font-weight: 200;
 }
 
-/* Headings styling */
-main h1 {
-  font-size: 3.5em; /* Larger heading size */
-  font-weight: 300;
-  margin-top: 0; /* Removes extra space above the heading */
-  color: #444; /* Slightly lighter color for the heading */
-  margin-bottom: 20px; /* Adds spacing between heading and content */
+/* Remove default styles for email links */
+a[href^="mailto:"] {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Matches the link color to surrounding text */
+}
+
+/* Optional: Add hover effect for email link */
+a[href^="mailto:"]:hover {
+  color: rgb(192, 86, 0); /* Changes color on hover, if desired */
+  text-decoration: underline; /* Adds underline on hover for visibility */
+}
+
+.services-list li {
+  margin-bottom: 10px; /* Adjust the value as needed for spacing */
 }
 
 /* ------- MEDIA QUERIES ------- */
@@ -104,7 +120,7 @@ main h1 {
   /* Adjust the main content */
   main {
     padding: 0 20px; /* Reduce the horizontal padding */
-    margin-top: 260px; /* Add more space between the navbar and content */
+    margin-top: 360px; /* Add more space between the navbar and content */
   }
 
   /* Adjust the image size */
@@ -133,7 +149,7 @@ main h1 {
   /* Adjust the main content */
   main {
     padding: 0 10px; /* Reduce padding for smaller screens */
-    margin-top: 260px; /* Add more space for smaller devices */
+    margin-top: 360px; /* Add more space for smaller devices */
   }
 
   /* Adjust the image size */
