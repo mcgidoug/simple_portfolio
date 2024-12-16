@@ -15,92 +15,92 @@ body {
 
 header nav {
   /* background-color: #000; */
-  padding: 10px 0; /* Adds vertical spacing */
-  position: fixed; /* Fixes navbar at the top */
-  width: 100%; /* Makes navbar span the entire width */
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 1000; /* Ensures navbar is above other elements */
-  display: flex; /* Flex container for horizontal layout */
-  justify-content: space-evenly; /* Even spacing between items */
-  align-items: center; /* Center-aligns items vertically */
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Navbar links */
 header nav ul {
-  list-style: none; /* Removes bullet points */
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Flex container for horizontal layout */
-  gap: 20px; /* Optional: Adds some spacing between links */
+  display: flex;
+  gap: 20px;
 }
 
 header nav ul li {
-  display: inline; /* Ensures list items are inline */
+  display: inline;
 }
 
 header nav ul li a {
-  text-decoration: none; /* Removes underline from links */
-  color: white; /* Default text color */
-  font-weight: bold; /* Optional: Makes text bold */
-  padding: 10px 15px; /* Adds padding around links */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
 /* Hover effect */
 header nav ul li a:hover {
-  color: rgb(192, 86, 0); /* Changes text color to pink on hover */
+  color: rgb(192, 86, 0);
 }
 
 /* ------- MAIN PAGE CONTENT ------- */
 main {
-  margin: 20px; /* Adds space around the main content */
-  padding: 0 40px; /* Horizontal padding to ensure content isn't flush left */
-  max-width: 800px; /* Keeps the content width manageable for readability */
-  margin-left: auto; /* Centers the content horizontally */
-  margin-right: auto; /* Centers the content horizontally */
-  margin-top: 80px; /* Adds space between the navbar and the content */
+  margin: 20px;
+  padding: 0 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
 }
 
 /* Headings styling */
 main h1 {
-  font-size: 3.5em; /* Larger heading size */
+  font-size: 3.5em;
   font-weight: 300;
-  margin-top: 0; /* Removes extra space above the heading */
-  color: #444; /* Slightly lighter color for the heading */
-  margin-bottom: 20px; /* Adds spacing between heading and content */
+  margin-top: 0;
+  color: #444;
+  margin-bottom: 20px;
 }
 
 /* Image styling */
 main img {
-  display: block; /* Ensures the image is treated as a block element */
-  width: 150px; /* Set a fixed width for the photo */
-  height: auto; /* Keep the image’s aspect ratio */
-  border-radius: 12px; /* Rounded corners for the image */
-  margin-bottom: 20px; /* Adds space below the image */
+  display: block;
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 /* Paragraph styling */
 main p {
-  line-height: 1.8; /* Increases line spacing for readability */
-  font-size: 1.1em; /* Slightly larger font for better legibility */
-  margin-bottom: 20px; /* Adds spacing between paragraphs */
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin-bottom: 20px;
   font-weight: 200;
 }
 
 /* Remove default styles for email links */
 a[href^="mailto:"] {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; /* Matches the link color to surrounding text */
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Optional: Add hover effect for email link */
+/* Add hover effect for email link */
 a[href^="mailto:"]:hover {
-  color: rgb(192, 86, 0); /* Changes color on hover, if desired */
-  text-decoration: underline; /* Adds underline on hover for visibility */
+  color: rgb(192, 86, 0);
+  text-decoration: underline;
 }
 
 .services-list li {
-  margin-bottom: 10px; /* Adjust the value as needed for spacing */
+  margin-bottom: 10px;
 }
 
 /* ------- MEDIA QUERIES ------- */
@@ -109,33 +109,34 @@ a[href^="mailto:"]:hover {
 @media screen and (max-width: 768px) {
   /* Adjust the navbar layout */
   header nav ul {
-    flex-direction: column; /* Stack the navbar items vertically */
-    align-items: center; /* Center the items horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   header nav ul li {
-    margin-bottom: 10px; /* Adds space between navbar items */
+    margin-bottom: 10px;
   }
 
   /* Adjust the main content */
   main {
-    padding: 0 20px; /* Reduce the horizontal padding */
-    margin-top: 360px; /* Add more space between the navbar and content */
+    /* padding: 0 20px;
+    margin-top: 360px; */
+    padding-top: 260px;
   }
 
   /* Adjust the image size */
   main img {
-    width: 120px; /* Slightly smaller image */
+    width: 120px;
   }
 
   /* Adjust the heading font size */
   main h1 {
-    font-size: 2.5em; /* Smaller font size for better readability on smaller screens */
+    font-size: 2.5em;
   }
 
   /* Adjust the paragraph font size */
   main p {
-    font-size: 1em; /* Slightly smaller paragraph text */
+    font-size: 1em;
   }
 }
 
@@ -148,22 +149,23 @@ a[href^="mailto:"]:hover {
 
   /* Adjust the main content */
   main {
-    padding: 0 10px; /* Reduce padding for smaller screens */
-    margin-top: 360px; /* Add more space for smaller devices */
+    /* padding: 0 10px;
+    margin-top: 360px; */
+    padding-top: 260px;
   }
 
   /* Adjust the image size */
   main img {
-    width: 100px; /* Make the image even smaller for very small screens */
+    width: 100px;
   }
 
   /* Further reduce heading font size */
   main h1 {
-    font-size: 2em; /* Adjust the heading size for small screens */
+    font-size: 2em;
   }
 
   /* Further reduce paragraph font size */
   main p {
-    font-size: 0.9em; /* Smaller paragraph text */
+    font-size: 0.9em;
   }
 }
