@@ -16,7 +16,7 @@ body {
 header nav {
   /* background-color: #000; */
   padding: 10px 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -119,9 +119,8 @@ a[href^="mailto:"]:hover {
 
   /* Adjust the main content */
   main {
-    /* padding: 0 20px;
-    margin-top: 360px; */
-    padding-top: 260px;
+    padding: 0 20px;
+    margin-top: 160px;
   }
 
   /* Adjust the image size */
@@ -149,9 +148,8 @@ a[href^="mailto:"]:hover {
 
   /* Adjust the main content */
   main {
-    /* padding: 0 10px;
-    margin-top: 360px; */
-    padding-top: 260px;
+    padding: 0 10px;
+    margin-top: 160px;
   }
 
   /* Adjust the image size */
