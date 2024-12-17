@@ -13,6 +13,19 @@ body {
 
 /* ------- NAVBAR ------- */
 
+.toggle-button {
+  all: unset; /* Resets all inherited styles */
+  cursor: pointer; /* Makes it clickable */
+  font-size: 24px;
+  padding: 16px;
+  display: none;
+}
+
+.toggle-button:hover {
+  color: rgb(192, 86, 0);
+  transition: color 0.3s ease;
+}
+
 header nav {
   /* background-color: #000; */
   padding: 10px 0;
@@ -109,8 +122,21 @@ a[href^="mailto:"]:hover {
 
 /* ------- MEDIA QUERIES ------- */
 
-/* For devices with a max-width of 768px (tablets and smaller) */
 @media screen and (max-width: 768px) {
+  #navbar {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+
+  #navbar.active {
+    display: block;
+  }
+
+  .toggle-button {
+    display: block;
+  }
   /* Adjust the navbar layout */
   header nav ul {
     flex-direction: column;
@@ -143,9 +169,22 @@ a[href^="mailto:"]:hover {
   }
 }
 
-/* For devices with a max-width of 480px (small phones) */
 @media screen and (max-width: 480px) {
-  /* Further reduce the navbar item spacing */
+  #navbar {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+
+  #navbar.active {
+    display: block;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
   header nav ul li {
     margin-bottom: 5px;
   }
