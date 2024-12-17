@@ -70,6 +70,10 @@ main h1 {
   margin-bottom: 20px;
 }
 
+main h2 {
+  font-weight: 200;
+}
+
 /* Image styling */
 main img {
   display: block;
