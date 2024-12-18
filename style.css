@@ -186,6 +186,10 @@ a[href^="mailto:"]:hover {
     font-size: 1em;
   }
 
+  .services-list li {
+    font-size: 1em;
+  }
+
   .social-icons {
     font-size: 1.3rem;
   }
