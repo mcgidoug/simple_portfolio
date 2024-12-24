@@ -137,6 +137,56 @@ a[href^="mailto:"]:hover {
   cursor: pointer;
 }
 
+#rss-feed {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.rss-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.rss-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.rss-item a:hover {
+  color: rgb(192, 86, 0);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.rss-item img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.rss-item p {
+  margin: 5px 0;
+}
+
+.rss-item iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin-top: 10px;
+}
+
+#wordpress-link {
+  color:white;
+  text-decoration: none;
+}
+
+#wordpress-link:hover {
+  color: rgb(192, 86, 0);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
 /* ------- MEDIA QUERIES ------- */
 
 @media screen and (max-width: 768px) {
