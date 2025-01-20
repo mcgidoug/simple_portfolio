@@ -187,6 +187,17 @@ a[href^="mailto:"]:hover {
   cursor: pointer;
 }
 
+#youtube-link {
+  color: white;
+  text-decoration: none;
+}
+
+#youtube-link:hover {
+  color: rgb(192, 86, 0);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
 /* ------- MEDIA QUERIES ------- */
 
 @media screen and (max-width: 768px) {
